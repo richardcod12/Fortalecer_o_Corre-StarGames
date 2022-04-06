@@ -1,0 +1,339 @@
+/* css reset */
+
+*{
+	border:0;
+	margin:0;
+	padding:0;
+	}
+
+body{
+    background-color:#222;
+    font-family:tahoma;
+}
+
+@font-face{
+	font-family:novafonte;
+	src:url(fontes/LibreBaskerville-Regular.ttf);
+	}
+
+.texto2{
+        font-family:novafonte;
+        font-size:32px;
+        color:#000;
+        text-align: center;
+        }
+
+.texto{
+	font-family:novafonte;
+	font-size:50px;
+	}
+
+main{
+	position:relative;
+	width:100%;
+	height:700px;
+	background-color:#222;
+	margin:auto;
+    color:#FFF;
+	}
+
+#cabecalho{
+	position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+	width:100%;
+	height:50px;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: space-around;
+    }
+
+#menu_esquerdo{
+	position:relative;
+	width:35%;
+	height:auto;
+	display:flex;
+	align-items:center;
+	flex-direction:row;
+	justify-content:space-around;
+	padding-top:20px;
+	padding-bottom:20px;
+  
+  	}
+
+#menu_esquerdo a:hover{
+    background-color:#13615E;
+    border-color:#fff;
+
+}     
+
+#menu_esquerdo a{
+    font-size:16px;
+	color:#FFF;
+	text-decoration:none;
+	font-family:arial;
+	font-weight:bold;
+	}
+#menu_direito{
+	position:relative;
+	width:35%;
+	height:40px;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	}
+
+.link1{
+	width:100px;
+	height:50px;
+	float:left;
+	}
+
+#menu_direito img{
+	width:100%;
+	height:100%;
+	}
+
+.link2{
+	border:1px solid #333;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	text-decoration:none;
+	font-family:arial;
+	width:100px;
+	height:auto;
+	float:left;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-weight:bold;
+	}
+
+.link3, .link4{
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	text-decoration:none;
+	font-family:arial;
+	width:200px;
+	height:auto;
+	float:left;
+	background-color:#13615E;
+	padding-top:20px;
+	padding-bottom:25px;
+	font-weight:bold;
+	}
+.link4{
+	width:150px;
+	/*height:auto;*/
+	}
+
+#miolo{
+	position:relative;
+	width:100%;
+	height:700px;
+	margin:auto;
+	margin-top:50px;
+    background-image:url(imagens/jogos.png);
+    background-color:#222;
+	}
+
+#lado_esquerdo{
+	position:relative;
+	width:50%;
+	height:400px;
+	float:left;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-around;
+    margin-left:50px;
+	}
+
+#titulo_meio{
+	font-weight:bold;
+	color:#FFF;
+	height:100px;
+    margin-top:100px; 
+	}
+
+#lado_esquerdo p{
+	font-family:verdana;
+	font-size:20px;	
+	color: #FFF;
+	height:100px;
+	}
+
+#lado_direito{
+	position:relative;
+	width:40%;
+	height:400px;
+	float:left;
+    margin-top:35px;
+	}
+
+#topo{
+	position:relative;
+	width:100%;
+	height:auto;
+	}
+
+.direita{
+	float:right;
+	}
+
+
+    #quem_somos{
+    position:relative;
+	width:100%;
+	height:600px;
+	margin:auto;
+	background-color:#FFF;
+    }
+
+    #menu{
+        position:relative;
+        width:100%;
+        height:600px;
+        margin:auto;
+        background-color:rgb(0, 0, 0);
+        display:flex;
+	    flex-direction: row;
+	    align-items: center;
+	    justify-content:space-around;
+        }
+
+        #menu img{
+        width:30%;
+        height:30%;
+        }
+
+     .menus{
+        position:relative;
+        width:15%;
+        height:250px;
+        background-color:rgb(247, 244, 239);
+        margin:5px;
+        margin-top:40px;
+        border-radius:5%;
+        text-align:center; 
+        color:#000;       
+        font-size:10px;
+        font-family:arial;
+        padding:10px;
+     }   
+     
+     #menu a{
+        position:relative;
+        text-align:center;
+        font-size:12px;
+        color:#FFF;
+        text-decoration:none;
+        font-family:arial;
+        width:150px;
+        height:auto;
+        float:left;
+        margin-left:25px;
+        margin-top:15px;
+        background-color:#e20505;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-weight:bold;
+        border-radius:5%;
+        }
+
+
+    #titulo_menu{
+            position:absolute;
+            width:100%;
+            height:auto;
+            top:400px;
+            left:200px;
+    }
+	
+    .link6{
+        position:absolute;
+        text-align:center;
+        font-size:12px;
+        color:#FFF;
+        text-decoration:none;
+        font-family:arial;
+        width:150px;
+        height:auto;
+        float:left;
+        margin-left:25px;
+        margin-top:15px;
+        background-color:#13615E;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-weight:bold;
+        border-radius:5%;
+        top:400px;
+        left:200px;
+        }
+
+        #contato{
+            position:relative;
+            width:100%;
+            height:600px;
+            margin:auto;
+            background-image: url(imagens/controle.jpg);
+            padding-top:20px;
+            }
+
+        label{
+            margin-left:300px;
+        }
+        input, textarea{
+            border:2px solid #333;
+            width:400px;
+            height:30px;
+            color:#333;
+            font-size:16px;
+            margin:10px;
+            padding:5px;
+        }
+
+        textarea{
+            height:200px;
+        }
+         .botao{
+            width:100px;
+            height:30px;
+            background-color: #000;
+            color:#FFF;
+            margin-left:310px;
+         }
+         h1{
+             text-align:center;
+             color:#fff;
+             font-family:tahoma;
+             font-weight: normal;
+
+         }
+
+         footer{
+            position:relative;
+            width:100%;
+            height:100px;
+            background-color:rgb(5, 1, 1);
+            text-align: center;
+            padding-top:50px;
+            
+            }
+
+            #carouselExampleControls{
+                width: 100%;
+                height: 650px;
+            }
+
+            p{
+                margin-top: 50px;
+            }
+
+       
+
+        
