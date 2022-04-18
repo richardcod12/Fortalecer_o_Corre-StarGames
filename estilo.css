@@ -71,15 +71,15 @@ main{
 
 #menu_esquerdo a:hover{
     background-color:#DAA520;
-    border-color:#fff;
+    color:#1900ff;
 
 }     
 
 #menu_esquerdo a{
-    font-size:17px;
+    font-size:16px;
 	color:#FFF;
 	text-decoration:none;
-	font-family:novafonte1;
+	font-family:novafonte;
 	font-weight:bold;
 	}
 #menu_direito{
@@ -119,10 +119,10 @@ main{
 
 .link3, .link4{
 	text-align:center;
-	font-size:15px;
+	font-size:14px;
 	color:#FFF;
 	text-decoration:none;
-	font-family:novafonte2;
+	font-family:novafonte;
 	width:200px;
 	height:auto;
 	float:left;
