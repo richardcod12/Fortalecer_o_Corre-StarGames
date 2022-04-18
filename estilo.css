@@ -119,12 +119,13 @@ main{
 
 .link3, .link4{
 	text-align:center;
-	font-size:14px;
+	font-size:18px;
 	color:#FFF;
 	text-decoration:none;
 	font-family:novafonte;
 	width:200px;
-	height:auto;
+	height:55px;
+	margin-top: -20px;
 	float:left;
 	background-color:#DAA520;
 	padding-top:20px;
