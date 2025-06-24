@@ -1,34 +1,14 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY & FONTS */
 body {
   background-color: #222;
   color: #fff;
   font-family: 'Tahoma', Arial, sans-serif;
 }
 
-/* CABEÇALHO */
-header {
-  background: #111;
-  padding: 0.5rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+/* HEADER */
 header .container {
   max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
 }
+
 header nav a, header .btn {
   color: #fff;
   text-decoration: none;
@@ -43,11 +23,33 @@ header nav a:hover, header .btn:hover {
   color: #1900ff;
 }
 
+/* CARROSSEL E IMAGENS */
+.carousel-inner img,
+img.img-fluid, img, iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .carousel-inner img {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner img {
+    max-height: 250px;
+    border-radius: 8px;
+  }
+}
+
 /* TITULOS */
 h1, h2, h3 {
-  font-family: 'novafonte', 'Tahoma', Arial, sans-serif;
+  font-family: 'Tahoma', Arial, sans-serif;
   text-align: center;
-  margin-bottom: 1rem;
   font-weight: bold;
 }
 h1 {
@@ -60,37 +62,24 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1rem; }
+}
 
-/* SECOES GERAIS */
+/* SECOES */
 section {
-  max-width: 1200px;
-  margin: 0 auto 2rem auto;
-  padding: 2rem 1rem;
   border-radius: 12px;
-  background: rgba(30,30,30,0.95);
+  background: rgba(30,30,30,0.96);
   box-shadow: 0 0 16px #0004;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
 }
-
-/* CARROSSEL */
-.carousel-inner img,
-img.img-fluid, img, iframe {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-/* "QUEM SOMOS" */
-#quem_somos .row, #contato .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-#quem_somos .col-12, #contato .col-12 {
-  flex: 1 1 320px;
-  min-width: 280px;
+@media (max-width: 768px) {
+  section {
+    padding: 1rem 0.1rem;
+  }
 }
 
 /* FORMULÁRIO */
@@ -133,52 +122,4 @@ footer {
   margin-top: 2em;
   font-size: 1rem;
   border-top: 3px solid #daa520;
-}
-
-/* RESPONSIVO */
-@media (max-width: 991px) {
-  header .container, section {
-    padding: 0 0.5rem;
-  }
-  section {
-    padding: 1.2rem 0.5rem;
-  }
-}
-@media (max-width: 768px) {
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.3rem; }
-  .carousel-inner img, img.img-fluid, img, iframe {
-    border-radius: 8px;
-  }
-  section {
-    padding: 0.8rem 0.2rem;
-  }
-}
-@media (max-width: 576px) {
-  header .container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  h1 { font-size: 1.2rem; margin-top: 1rem; }
-  h2 { font-size: 1rem; }
-  h3 { font-size: 1rem; }
-  section {
-    padding: 0.5rem 0.1rem;
-  }
-  /* Ajuste para botões/formulário */
-  form .form-control, form textarea {
-    max-width: 100%;
-    font-size: .95rem;
-  }
-  .botao, form .btn {
-    width: 100%;
-    padding: 0.6em 0;
-  }
-}
-
-/* PERSONALIZAÇÃO EXTRA PARA IMAGENS GRANDES */
-@media (min-width: 1200px) {
-  .carousel-inner img, img.img-fluid, img, iframe {
-    max-height: 480px;
-  }
 }
